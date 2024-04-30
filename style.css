@@ -1,0 +1,56 @@
+
+ *{
+ margin: 0;
+ padding: 0;
+ }
+ body{
+ display: flex;
+ height: 100vh;
+ }
+ section{
+ display:inline-block;
+ vertical-align: top; /*valign의 원형*/
+ padding: 50px 40px;
+ width: 25%;
+ height: 100%;
+ color: white;
+ box-sizing: border-box;
+ transition: all 1s ease-in;
+ justify-content: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+
+
+
+ justify-content: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ }
+ .spring{
+ background-image: url(./images/봄.jpg);
+
+ }
+ .summer{
+background-image: url(./images/여름.jpg);
+ }
+.fall{
+ background-image: url(./images/가을.jpg);
+ }
+ .winter{
+ background-image: url(./images/겨울.jpg);
+ }
+ section:hover{
+    width: 50%;
+ }
+ section h1{
+    transform: rotate(0);
+ }
+ section p{
+    transform: rotate(90deg);
+    transition: transform 1s ease-in;
+    opacity: 0;
+ }
+ section:hover p{
+    transform: rotate(0);
+    opacity: 1;
+ }
